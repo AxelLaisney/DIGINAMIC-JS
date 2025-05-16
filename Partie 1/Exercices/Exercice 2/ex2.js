@@ -3,7 +3,7 @@
 // ==========================
 // Niveau 1
 // ==========================
-console.log(5 + 3);         
+console.log(5 + 3);   
 console.log(10 - 4);       
 console.log(2 * 3);           
 console.log(8 / 2);          
@@ -30,7 +30,7 @@ console.log(false || (true && false));
 // ==========================
 // Niveau 3
 // ==========================
-console.log("5" + 3);           
+console.log("5" + 3);   // 53        
 console.log("5" - 3);        
 console.log("5" * "2");         
 console.log("a" * 2);        
