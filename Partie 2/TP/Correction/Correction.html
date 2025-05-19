@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TP JS – Gestion de Livres</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+    .book-list {
+      margin-top: 20px;
+    }
+    .book-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .delete-btn {
+      background-color: #f44336;
+    }
+    .search-container {
+      margin: 20px 0;
+    }
+    input[type="text"] {
+      padding: 8px;
+      width: 200px;
+      margin-right: 10px;
+    }
+    #searchResults {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-title">TP JS – Gestion de Livres</h1>
+  
+  <div id="mainMenu">
+    <button class="button" onclick="showAddBookForm()">Ajouter un livre</button>
+    <button class="button" onclick="showAllBooks()">Afficher tous les livres</button>
+    <button class="button" onclick="showSearchInterface()">Rechercher un livre</button>
+  </div>
+
+  <div id="addBookForm" style="display: none;">
+    <h2>Ajouter un livre</h2>
+    <input type="text" id="bookTitle" placeholder="Titre du livre">
+    <input type="number" id="bookYear" placeholder="Année de parution">
+    <input type="text" id="bookAuthor" placeholder="Auteur">
+    <button class="button" onclick="submitNewBook()">Ajouter</button>
+  </div>
+
+  <div id="bookList" style="display: none;" class="book-list">
+    <h2>Liste des livres</h2>
+    <ul id="bookListContainer"></ul>
+  </div>
+
+  <div id="searchInterface" style="display: none;">
+    <h2>Rechercher un livre</h2>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Rechercher par titre..." oninput="searchBooks()">
+    </div>
+    <div id="searchResults"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
