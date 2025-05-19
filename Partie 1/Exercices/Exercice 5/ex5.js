@@ -19,7 +19,60 @@ function displayObject(obj) {
     }
 }
 
-// displayObject(createPerson("John", "Doe", 30, "Developer"));
+// displayObject(createPerson("John", "Doe", 30, "Developer"));// Fonction qui crée un objet représentant une personne avec les propriétés : nom, prenom, age, profession
+// et retourne l'objet
+function createPerson(nom, prenom, age, profession) {
+    let person = {};
+    person.nom = nom;
+    person.prenom = prenom;
+    person.age = age;
+    person.profession = profession;
+}
+
+// Fonction qui affiche proprement les propriétés d’un objet passé en paramètre
+function displayObject(obj) {
+    let properties = Object.getOwnPropertyNames(obj)
+    for(let i = 0; i<properties.length;i++){
+        console.log(properties[i]);
+    }
+}
+
+// Fonction qui ajoute une nouvelle propriété à un objet
+// exemple : {a: 1, b: 2} et "c" -> 3 -> {a: 1, b: 2, c: 3}
+function addProperty(obj, key, value) {
+    Object.defineProperty(obj, key, value);
+}
+
+// Fonction qui vérifie si une propriété existe dans un objet
+// exemple : {a: 1, b: 2} et "a" -> true
+function hasProperty(obj, key) {
+    return obj.hasProperty(key);
+}
+
+// Fonction qui retourne le nombre total de propriétés dans un objet
+// exemple : {a: 1, b: 2} -> 2
+function countProperties(obj) {
+    let properties = Object.getOwnPropertyNames(obj);
+    return properties.length;
+}
+
+// Fonction qui fusionne deux objets en un seul (les clés du second objet écrasent celles du premier en cas de doublon)
+// exemple : {a: 1, b: 2} et {b: 3, c: 4} -> {a: 1, b: 3, c: 4}
+function mergeObjects(obj1, obj2) {
+    return obj3 = { ...obj1, ...obj2};
+}
+
+// Fonction qui retourne un tableau contenant toutes les valeurs d’un objet
+// exemple : {a: 1, b: 2} -> [1, 2]
+function getObjectValues(obj) {
+    let properties = Object.getOwnPropertyNames(obj)
+    let array = []
+    for(let i = 0; i<properties.length; i++){
+        array.push(properties[i]);
+    }
+    return array;
+}
+
 
 // Fonction qui ajoute une nouvelle propriété à un objet
 // exemple : {a: 1, b: 2} et "c" -> 3 -> {a: 1, b: 2, c: 3}
