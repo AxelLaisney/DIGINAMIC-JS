@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercices DOM</title>
+</head>
+<body>
+  <h1 id="main-title">Bienvenue sur la page DOM</h1>
+
+  <p class="description">Ceci est un paragraphe descriptif.</p>
+  <p class="description">Un autre paragraphe pour tester la sélection multiple.</p>
+
+  <ul id="items-list">
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 3</li>
+  </ul>
+
+  <button id="change-title">Changer le titre</button>
+  <button id="highlight-paragraphs">Surligner les paragraphes</button>
+  <button id="add-item">Ajouter un élément</button>
+  <button id="remove-last-item">Supprimer le dernier élément</button>
+  <button id="toggle-list-visibility">Cacher / Afficher la liste</button>
+    <button id="change-second-paragraph">Changer le 2e paragraphe</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .description {
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin: 10px 0;
+      border-left: 4px solid #3498db;
+    }
+
+    ul#items-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul#items-list li {
+      background-color: #dff0d8;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #a3c293;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestion des articles</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 30px;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .article {
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #fff;
+      border-left: 5px solid #3498db;
+      transition: background-color 0.3s;
+    }
+
+    .article:hover {
+      background-color: #e8f4fc;
+    }
+
+    input, select {
+      padding: 8px;
+      margin: 10px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Liste des articles</h1>
+
+  <input type="text" id="search-input" placeholder="Recherche d'article..."/>
+
+  <div id="articles-container">
+    <div class="article">Article 1</div>
+    <div class="article">Article 2</div>
+    <div class="article">Article 3</div>
+  </div>
+
+  <select id="color-picker">
+    <option value="">-- Choisir une couleur de fond --</option>
+    <option value="lightyellow">Jaune</option>
+    <option value="lightgreen">Vert</option>
+    <option value="lightblue">Bleu</option>
+  </select>
+
+  <button id="add-article">Ajouter un article</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
