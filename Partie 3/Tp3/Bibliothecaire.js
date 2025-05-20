@@ -1,4 +1,6 @@
-class Bibliothecaire extends Utilisateur{
+
+
+export class Bibliothecaire extends Utilisateur{
     constructor(nom){
         super(nom);
     }

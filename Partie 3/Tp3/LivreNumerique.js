@@ -1,4 +1,6 @@
-class LivreNumerique extends Livre{
+
+
+export class LivreNumerique extends Livre{
     constructor(titre, auteur, annee, tailleFichier){
         super(titre, auteur, annee);
         this.tailleFichier = tailleFichier;

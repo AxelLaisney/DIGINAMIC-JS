@@ -4,16 +4,13 @@
     <title>Index</title>
 </head>
 <body>
+    <label id="currentUser" value=""></label>
+    <label>Changer d'utilisateur</label>
+    <select id="changeUser">
+    </select>
     <button id="addLivre">Ajouter un livre</button>
-    <table id="livreList">
-        <tr>
-            <th>Nom</tr>
-            <th>Auteur</tr>
-            <th>Annee</tr>
-            <th>Id</tr>
-            <th>Type</tr>
-        </tr>
-    </table>
+    <ul id="livreList">
+    </ul>
 <div id="livreForm" style="display: none;">
     <select id="typeLivre">
         <option value="numerique">Numérique</option>
@@ -22,7 +19,7 @@
     <label>Nom du livre</label>
     <input type="text" id="livreName">
     <label>Auteur du livre</label>
-    <input type="text" id="libreAuteur">
+    <input type="text" id="livreAuteur">
     <label>Année du livre</label>
     <input type="text" id="livreAnnee">
     <div id="taille" style="display: none;">
@@ -34,7 +31,7 @@
         <input type="text" id="livrePages">
     </div>
 
-    <button id="sumbit">Ajouter</button>
+    <button id="submit">Ajouter</button>
 </div>
 
 <script src="index.js"></script>

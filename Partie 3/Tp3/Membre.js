@@ -1,6 +1,11 @@
-class Membre extends Utilisateur{
-    constructor(name, livres){
+
+
+export class Membre extends Utilisateur{
+    constructor(name){
         super(name);
-        this.livres = livres;
+        this.livres = [];
+    }
+    emprunterLivre(livre){
+        this.livres.add(livre);
     }
 }
